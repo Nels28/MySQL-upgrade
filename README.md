@@ -1,6 +1,6 @@
 # MySQL-upgrade
 Bash script to upgrade MySQL to MariaDB
 
-This was created with the original purpose to upgrade MySQL 5.5 - 5.7 to MariaDB 10.1-5 for a Plesk server. 
+A script to upgrade MariaDB from 5.5/10.0/10.1 to 10.2 on CentOS 6 or 7 and intended for use with Plesk Onyx. It also configures /root/.my.cnf with the Plesk admin credentials to ensure standard CentOS logrotate works properly. This has the added benefit of ensuring you can easily run mysqladmin without entering admin DB credentials.
 
-It can be modified to run an automatic upgrade for any type of MySQL server to MariaDB with CentOS and such.
+It is integrated with Plesk tools to provide back up, upgrade DBs, and notify Plesk of version changes.
